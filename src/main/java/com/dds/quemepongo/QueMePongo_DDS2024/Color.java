@@ -1,8 +1,8 @@
 package com.dds.quemepongo.QueMePongo_DDS2024;
 
-public enum Color 
+public class Color 
 {
-	Rojo,
-	Verde,
-	Azul
+	int red;
+	int green;
+	int blue;
 }
