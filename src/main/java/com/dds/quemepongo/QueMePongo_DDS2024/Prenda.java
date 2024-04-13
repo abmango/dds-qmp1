@@ -1,16 +1,14 @@
 package com.dds.quemepongo.QueMePongo_DDS2024;
 
 public class Prenda {
-	String tipo;
-	Categoria categoria;
+	TipoPrenda tipo;
 	Material material;
 	Color colorPrincipal;
 	Color colorSecundario;
 	
-	
-	Prenda(String tipoNuevo,Material material,Color colorPrincipal, Color colorSecundario, Categoria categoria){
+	Prenda(TipoPrenda tipoNuevo,Material material,Color colorPrincipal, Color colorSecundario){
 		
-		if(tipoNuevo == null || material == null || colorPrincipal == null || categoria == null) 
+		if(tipoNuevo == null || material == null || colorPrincipal == null) 
 		{
 			throw new RuntimeException("Prenda invalida, porfavor seleccione tipo, color o material nuevo");
 		}
@@ -20,7 +18,7 @@ public class Prenda {
 		this.colorSecundario = colorSecundario;
 	}
 	
-	String  tipo() 
+	TipoPrenda  tipo() 
 	{
 		return tipo;
 	}
